@@ -4,7 +4,6 @@ import re
 from collections import defaultdict
 
 def analyze_access_log(file_path):
-    # Initialize counters and data structures
     total_requests = 0
     root_requests = 0
     status_405_count = 0
@@ -45,14 +44,12 @@ def analyze_access_log(file_path):
     most_requests_ip = max(ip_requests, key=ip_requests.get)
     most_requests_count = ip_requests[most_requests_ip]
 
-    # Print the results
     print(f"Total requests for '/': {root_requests}")
     print(f"Total requests with a 405 status code: {status_405_count}")
     print(f"IP address with the most requests: {most_requests_ip} ({most_requests_count} requests)")
     print(f"Total bytes transferred: {total_bytes_transferred}")
 
-# Example usage
 if __name__ == "__main__":
-    log_file_path = 'access.log'  # Update this to your access.log file path
+    log_file_path = 'access.log'
     analyze_access_log(log_file_path)
 

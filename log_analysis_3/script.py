@@ -1,3 +1,5 @@
+# currently only works for question 2 and 3
+
 import re
 from collections import defaultdict
 

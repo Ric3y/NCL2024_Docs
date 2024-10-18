@@ -1,3 +1,4 @@
+#this only solves problem 2 and 3
 from collections import Counter
 
 def process_log(log_file):
@@ -22,7 +23,6 @@ def process_log(log_file):
 
     return unique_ip_count, most_common_ip, most_common_count
 
-# Replace 'error.log' with the path to your log file
 log_file = 'error.log'
 
 unique_ip_count, most_common_ip, most_common_count = process_log(log_file)

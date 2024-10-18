@@ -3,6 +3,8 @@ import binascii
 import itertools
 import string
 
+# Use case: to decrypt a ARC4 cipher given key length
+
 # The ciphertext in hexadecimal format
 ciphertext_hex = "6fce38f8836e82d446c3af46eb3a945a97bb8088256751e47f73a02943883165"
 

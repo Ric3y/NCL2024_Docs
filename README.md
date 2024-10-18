@@ -1,1 +1,1 @@
-Currently only for practice games only
+Currently only for practice problems only
